@@ -2,53 +2,104 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
 }
-
-header {
-  padding: 50px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: black;
-}
-
-header nav {
-  padding-top: 0px;
-  margin-right: 0px;
-  float: right;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-}
-
-header h1 {
-  display: inline-block;
-  font-size: 48px;
-}
-
-header nav ul {
-  list-style-type: none;
-}
-
-header nav ul li {
-  display: inline-block;
-  margin-left: 25px;
-}
-
-.subtitle-banner {}
 
 body {
   background-color: #ece7e1;
-  margin: 0;
-  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
 
-.page-wrapper{}
+header {
+  background-color: #ece7e1;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid black;
+  justify-content: space-between;
+}
 
-.page-section{}
+header img {
+  width: 150px;
+  margin-right: 20px;
+}
 
-.page-section-contact{}
+header h1 {
+  font-size: 36px;
+  color: black;
+}
 
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: 25px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.subtitle-banner {
+  background-color: black;
+  color: #ece7e1;
+  text-align: center;
+  padding: 20px;
+}
+
+.subtitle-banner h2 {
+  font-size: 24px;
+}
+
+.page-wrapper {}
+
+.page-section {}
+
+.page-section-contact {}
+
+.portfolio-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+  grid-template-areas:
+    "work-1 work-2"
+    "work-1 work-3"
+    "work-1 work-4"
+    "work-1 work-5";
+}
+
+.work-1 {
+  grid-area: work-1;
+}
+
+.work-2 {
+  grid-area: work-2;
+}
+
+.work-3 {
+  grid-area: work-3;
+}
+
+.work-4 {
+  grid-area: work-4;
+}
+
+.work-5 {
+  grid-area: work-5;
+}
 
 h1,
 h2,
