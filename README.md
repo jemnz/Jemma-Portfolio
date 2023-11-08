@@ -13,6 +13,6 @@ The website can be opened in any browser via the following link:
 
 Below is a screenshot of the deployed website which shows the links in the navigation bar to access different sections of the website. Each project in the work grid is a link to the project.
 
-[Screenshot of website](images/Bootstrap-website-screenshot.jpg)
+[Screenshot of website](./assets/images/screenshot.jpg)
 
 
