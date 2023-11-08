@@ -1,104 +1,12 @@
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 body {
-  background-color: #ece7e1;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
-}
-
-header {
-  background-color: #ece7e1;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  border: 2px solid black;
-  justify-content: space-between;
-}
-
-header img {
-  width: 150px;
-  margin-right: 20px;
-}
-
-header h1 {
-  font-size: 36px;
-  color: black;
-}
-
-header nav ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-header nav ul li {
-  display: inline;
-  margin-left: 25px;
-}
-
-header nav a {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-}
-
-.subtitle-banner {
-  background-color: black;
-  color: #ece7e1;
-  text-align: center;
-  padding: 20px;
-}
-
-.subtitle-banner h2 {
-  font-size: 24px;
-}
-
-.page-wrapper {}
-
-.page-section {}
-
-.page-section-contact {}
-
-.portfolio-grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-gap: 25px;
-  grid-template-areas:
-    "work-1 work-2"
-    "work-1 work-3"
-    "work-1 work-4"
-    "work-1 work-5";
-}
-
-.work-1 {
-  grid-area: work-1;
-}
-
-.work-2 {
-  grid-area: work-2;
-}
-
-.work-3 {
-  grid-area: work-3;
-}
-
-.work-4 {
-  grid-area: work-4;
-}
-
-.work-5 {
-  grid-area: work-5;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
 }
 
 h1,
@@ -113,3 +21,191 @@ h6 {
 p {
   margin: 0;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f0eeee;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+
+}
+
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #040404;
+}
+
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero-banner {
+  width: 100%;
+  height: 40vh;
+  background-image: url("images/Banner-design.jpg"); 
+  background-size: contain; 
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%; 
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none; 
+}
+
+.hero-image {
+  flex: 1;
+  margin-right: 20px; 
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  flex: 3;
+  text-align: center;
+}
+
+.big-text {
+  font-size: 36px; 
+  font-weight: bold;
+  margin: 0; 
+}
+
+p {
+  font-size: 18px; 
+  margin: 0; 
+}
+
+
+.page-section {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.section-title {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+ 
+ 
+}
+
+.section-title h2 {
+  margin: 0; 
+}
+
+.section-content {
+  flex: 2;
+  padding: 10px;
+  border-left: 10px solid black; 
+
+}
+
+.portfolio-grid {
+  grid-column: span 2;
+  
+}
+
+.work-1
+.works {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.portfolio-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border:  10px solid antiquewhite;
+}
+
+
+.work-1{
+  flex-grow:2;
+}
+
+.works {
+  flex-grow: 1;
+  
+}
+
+.image-title {
+  font-weight: bold;
+  margin: 5px 0;
+  position: absolute;
+  bottom: 0; 
+  right: 0; 
+  transform: translate(-50%, -50%); 
+  background:antiquewhite;
+  color: black; 
+  padding: 15px;
+  font-weight: bold; 
+  font-size: 20px;
+}
+
+
+a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.contact {
+  background-color:antiquewhite;
+}
+
